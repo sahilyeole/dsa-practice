@@ -1,2 +1,7 @@
-a = int input
-b = int input
+Define two variables a and b
+   FOR i = 1 TO MAX(a, b) DO
+      IF a % i is 0 AND b % i is 0 THEN
+         HCF = i
+      ENDIF
+   ENDFOR
+   DISPLAY HCF
