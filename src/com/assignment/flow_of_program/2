@@ -1,0 +1,2 @@
+variable a = int input and b = int input
+return a+b

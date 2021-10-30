@@ -1,0 +1,4 @@
+variable a = int input
+if a % 4 == 0:
+    return leap year
+return not leap year
