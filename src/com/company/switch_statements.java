@@ -9,7 +9,7 @@ public class switch_statements {
         String fruit = in.next();
         // program : print first letter of a fruit inputted
         // instead of multiple if statements we use switch statements
-        //by old switch statements syntax. heyyyyyyyyyyyyyyyyy
+        //by old switch statements syntax
 
 //        switch (fruit) {
 //            case "Mango":
