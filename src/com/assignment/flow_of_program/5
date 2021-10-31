@@ -1,0 +1,4 @@
+summ = 0
+count = 1
+while input != x:
+    summ = summ+input
