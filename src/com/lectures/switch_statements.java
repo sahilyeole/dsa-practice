@@ -1,4 +1,4 @@
-package com.company;
+package com.lectures;
 import java.util.Scanner;
 public class switch_statements {
     public static void main(String[] args) {

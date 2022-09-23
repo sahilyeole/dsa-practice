@@ -1,4 +1,4 @@
-package com.company;
+package com.lectures;
 
 public class Functions {
 }
