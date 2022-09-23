@@ -31,6 +31,7 @@ public class switch_statements {
             case "Banana" -> System.out.println("B");
             default -> System.out.println("idk");
         }
+        in.close();
     }
 
 

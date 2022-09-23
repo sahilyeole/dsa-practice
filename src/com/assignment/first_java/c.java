@@ -12,5 +12,6 @@ public class c {
         System.out.println("The Simple Interest is:");
         float A =  P*(1+(R*T));
         System.out.println(A);
+        input.close();
     }
 }

@@ -27,8 +27,10 @@ public class Conditionals_loops {
 
         //Q1. Find the largest no.
         Scanner input = new Scanner(System.in);
-        while(true){
-            System.out.print("Enter the no.1: ");
+        try{
+
+            while(true){
+                System.out.print("Enter the no.1: ");
             int num1 = input.nextInt();
             System.out.print("Enter the no.2: ");
             int num2 = input.nextInt();
@@ -43,19 +45,22 @@ public class Conditionals_loops {
 //                System.out.println("num2 greatest");
 //            }
 //            else if (num3>num2 & num3 >num1) {
-//                System.out.println("num3 greatest");
-//            }
-            //Kunal's Solution
-            int max = num1;
-            if (num2>max) {
-                max = num2;
-            }
-            if (num3>max) {
-            max = num3;
-            }
-            System.out.println("Largest no. is "+max);
-
-
-        }
+    //                System.out.println("num3 greatest");
+    //            }
+    //Kunal's Solution
+    int max = num1;
+    if (num2>max) {
+        max = num2;
     }
+    if (num3>max) {
+        max = num3;
+    }
+    System.out.println("Largest no. is "+max);
+}
+
+}
+finally{
+    input.close();
+}
+}
 }
