@@ -2,7 +2,7 @@ package com.lectures;
 import java.util.Scanner;
 public class switch_statements {
     public static void main(String[] args) {
-        // if a & b variables point to same object lets say kunal '==' will return true but if a points to object kunal & b ponts to some other object kunal
+        // if a & b variables point to same object lets say kunal '==' will return true but if a points to object kunal & b ponts to some other object kunal (same value but diff obj)
         //then == will return false.... so to avoid this we use .equals
 
         Scanner in = new Scanner(System.in);
