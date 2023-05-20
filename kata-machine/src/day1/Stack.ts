@@ -5,10 +5,10 @@ interface Node<T>{
 
 export default class Stack<T> {
     public length: number;
-    private top? : Node<T>;
+    private head? : Node<T>;
 
     constructor() {
-        this.top = undefined;
+        this.head = undefined;
         this.length = 0;
 
     }
@@ -16,33 +16,32 @@ export default class Stack<T> {
     push(item: T): void {
         const node = {value:item} as Node<T>
             this.length++;
-        if(!this.top){
-            this.top = node;
+        if(!this.head){
+            this.head = node;
             return
         }
-            node.prev = this.top;
-            this.top = node;
+            node.prev = this.head;
+            this.head = node;
 }
     pop(): T | undefined {
 
             this.length = Math.max(0,this.length-1) // decrement length, at max till 0
         
             if (this.length ===0){
-                const top = this.top
-                this.top = undefined
-                return top?.value
+                const head = this.head
+                this.head = undefined
+                return head?.value
             }
 
-            const top = this.top as Node<T>
-            this.top = top.prev 
+            const head = this.head as Node<T>
+            this.head = head.prev 
 
-            return top.value
+            return head.value
 
 }
     peek(): T | undefined {
 
-        return this.top?.value;
+        return this.head?.value;
 
 }
 }
-
